@@ -30,8 +30,6 @@ friend_list = []
 # iterate through the friend information and add it to the list
 for friend in friend_info['items']:
     if 'bdate' in friend:
-        #first_name = friend.get('first_name', '').encode('utf-8').decode('utf-8')
-        #last_name = friend.get('last_name', '').encode('utf-8').decode('utf-8')
         name = friend.get('first_name', '').encode('utf-8').decode('utf-8') + " " + friend.get('last_name', '').encode('utf-8').decode('utf-8')
         bdate = friend.get('bdate', '')
         
