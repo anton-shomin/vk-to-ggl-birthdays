@@ -2,8 +2,8 @@ import json
 import vk_api
 
 # Authenticate with VK API
-LOGIN = input("Please enter your VK login")
-PSSWD = input("Please enter your VK password")
+LOGIN = input("Please enter your VK login \n")
+PSSWD = input("Please enter your VK password \n")
 vk_session = vk_api.VkApi(LOGIN, PSSWD)
 vk_session.auth()
 
