@@ -1,4 +1,4 @@
-# VK to Google Calendar birthdays importer
+# VK friends to Google Calendar birthdays importer
 Project allows export the list of friends that have visible birth date from VK social network.
 List of friends is exported to friend_info.json in format [{"name": "John Doe", "bdate": "05-05"}]
 Then list of friends is imported to the google calendar creating recurring yearly events with title "John Doe's Birthday".
