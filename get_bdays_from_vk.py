@@ -36,12 +36,10 @@ for friend in friend_info['items']:
         bdate = friend.get('bdate', '')
         
         if bdate:
-            #date_of_birth = date_of_birth_update(bdate)
-            friend_dict = {
+            friend_list.append({
                 'name': name,
                 'bdate': date_of_birth_update(bdate),
-            }
-            friend_list.append(friend_dict)
+            })
 
 # write the friend information to a JSON file
 with open('friend_info.json', 'w', encoding='utf-8') as f:
